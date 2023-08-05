@@ -1,0 +1,128 @@
+#Home {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+
+  section {
+    width: 100%;
+
+    &:first-of-type {
+      padding-left: $p;
+      > div {
+        border-top: 1px solid $color6_2;
+        height: 100%;
+        padding-top: 6rem;
+        h1 {
+          font: 900 4rem $text1;
+        }
+      }
+      .typewriterpara {
+        margin: 20px 0;
+        letter-spacing: 5px;
+        color: rgb(155, 11, 23);
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font: 380 2rem $text1;
+
+      }
+      #mail {
+        display: flex;
+        margin: 5rem 0;
+        width: 70%;
+        gap: 4rem;
+        align-items: center;
+
+        > a {
+          &:first-of-type {
+            background-color: $color3;
+            color: $color1;
+            padding: 0.5rem 0.8rem;
+            transition: all 0.3s;
+            &:hover {
+              background-color: $color3_1;
+            }
+
+            &:last-of-type {
+              font: 600 1.2 rem $text2;
+              color: $color5;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+      aside {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+      }
+      article {
+        margin: 2rem 0;
+        width: 10rem;
+        color: $color5;
+        position: relative;
+        &::after {
+          content: "";
+          background-color: $color4;
+          width: 100%;
+          height: 5rem;
+          position: absolute;
+          top: 20%;
+          left: 20%;
+          border-radius: 50px;
+          z-index: -1;
+        }
+        > p {
+          font: 900 2rem $text1;
+        }
+        > span {
+          font: 500 1rem $text2;
+        }
+      }
+      article [data-special] {
+        width: 16rem;
+      }
+    }
+    &:last-of-type {
+      border-top: 1px solid $color6_2;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      overflow-x: hidden;
+
+      &::after {
+        content: "";
+        width: 25vmax;
+        height: 25vmax;
+        background-color: $color1;
+        position: absolute;
+        z-index: -5;
+        border-radius: 50%;
+        margin-right: 8%;
+      }
+    }
+    img {
+      width: 21vmax;
+      // object-fit: contain;
+       border-radius:50%;
+      height: 21vmax;
+      display: flex;
+      margin-right: 25%;
+      background-color: $color1;
+      
+    }
+    
+  }
+  > svg {
+    position: absolute;
+    font-size: 3rem;
+    color: $color1;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%);
+    animation: animateSvg 0.7s infinite linear alternate;
+  }
+}
