@@ -2,9 +2,12 @@ import React from "react";
 // import {india}from "../assets/india.png";
 import india from "../assets/india.jpg";
 import av from "../assets/ar.png";
-
+import Pdf from "../assets/a.pdf";
 import {
   AiFillContacts,
+  AiFillFile,
+  AiFillFileExcel,
+  AiFillFilePdf,
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
@@ -17,15 +20,12 @@ import {
 const Footer = () => {
   return (
     <footer>
-      
       <div>
-      
         <img src={av} alt="Avinash" />
 
         <h2>Avinash Rathod </h2>
         <p>Made With 🧡 in India</p>
-        <br/>
-        
+        <br />
       </div>
 
       <aside>
@@ -47,6 +47,10 @@ const Footer = () => {
           <a href="https://github.com/avirathod55252" target={"blank"}>
             <AiFillGithub />
           </a>
+          <a href={Pdf} target="_blank">
+            <AiFillFilePdf />
+          </a>
+          <div></div>
         </article>
       </aside>
       <a href="#Home">
@@ -58,10 +62,11 @@ const Footer = () => {
       </section>
       */}
 
-      <div >
-        <p >No ©copyright issue <br/> Feel free to copy
-        If you need any help, ping me !</p>
-        
+      <div>
+        <p>
+          No ©copyright issue <br /> Feel free to copy If you need any help,
+          ping me !
+        </p>
       </div>
     </footer>
   );

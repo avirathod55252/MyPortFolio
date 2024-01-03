@@ -75,9 +75,8 @@ const Home = () => {
               <p>
                 +
                 <motion.span
-                ref={projectCount}
-                whileInView={aniamtionProjectsCount}
-                  
+                  ref={projectCount}
+                  whileInView={aniamtionProjectsCount}
                 ></motion.span>
               </p>
               <span> Projects Done </span>
@@ -92,7 +91,7 @@ const Home = () => {
       </section>
 
       <section>
-        <img  src={me} alt="Avinash" />
+        <img src={me} alt="Avinash" />
       </section>
       <BsChevronDown />
     </div>

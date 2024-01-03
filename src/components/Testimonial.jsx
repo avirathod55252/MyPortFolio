@@ -7,22 +7,21 @@ const Testimonial = () => {
 
       <section>
         <TestimonialCard
-          name={"Bill Gates"}
+          name={"Aniket Chavan "}
           feedback={
-            "                      It's fine to celebrate success but it is more important to heed the lessons of failure. By "
+            "                      It's fine to celebrate success but it is more important to need the lessons of by  failure. "
           }
         />
 
         <TestimonialCard
-          name={"Ramzi"}
+          name={"Darshan Katale"}
           feedback={
             "Wow what a portfolio, doesn't expected this to be on youtube!"
           }
         />
-
         <TestimonialCard
-          name={"Sundar Pichai"}
-          feedback={"Amazing seems like you should the Google CEO"}
+          name={"Rushikesh Damugade."}
+          feedback={"Amazing seems like you should the Greate Developer "}
         />
       </section>
     </div>
